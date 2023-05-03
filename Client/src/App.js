@@ -4,6 +4,7 @@ import Navbar from './components/navbar';
 import Header from './components/header';
 import Footer from './components/footer';
 
+//route and app builder
 
 function App() {
   return (
