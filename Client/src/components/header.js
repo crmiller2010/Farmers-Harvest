@@ -1,20 +1,29 @@
 import React from 'react';
 
-const style= {
+const style = {
     Header: {
-    background: '#87CEFA',
-    padding: 60,
-    textAlign: 'center',
-    fontSize: 30,}
+        blah: blah
+    },
+    button: {
+
+    },
 };
 
+//function button = (if loggedin( show log out button)
+//else (show login button));
 
-function Header() {
-    return( 
-        <div style={style.Header}>
-            <h1>Farmers' Harvest</h1><h4>Test subtitle</h4>
+
+export default function Header() {
+    return (
+        <div className="first div">
+            <div style={style.Header}>
+                <h1>Farmers' Harvest</h1><h4>Test subtitle</h4>
+            </div>
+            <div style={style.button} >
+                <button />
+                <button />
+            </div>
         </div>
     )
 };
 
-export default Header
