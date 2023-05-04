@@ -1,1 +1,29 @@
-import React from "react";
+import React from 'react';
+
+const style = {
+    Header: {
+        blah: blah
+    },
+    button: {
+
+    },
+};
+
+//function button = (if loggedin( show log out button)
+//else (show login button));
+
+
+export default function Header() {
+    return (
+        <div className="first div">
+            <div style={style.Header}>
+                <h1>Farmers' Harvest</h1><h4>Test subtitle</h4>
+            </div>
+            <div style={style.button} >
+                <button />
+                <button />
+            </div>
+        </div>
+    )
+};
+
