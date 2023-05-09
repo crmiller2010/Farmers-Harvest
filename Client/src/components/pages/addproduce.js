@@ -20,7 +20,7 @@ export default function AddProduce () {
   return (
     <div>
         <div>
-            <h2 style={Style.title}>Add your current produce</h2>
+            <h2 style={style.title}>Add your current produce</h2>
             <form>
                 <select
                 multiple={true}
@@ -34,7 +34,7 @@ export default function AddProduce () {
                 </select>
             </form><div>
             <p>Your produce: {selectedPro.join(', ')}</p></div>
-            <div style={Style.sidebar}>
+            <div style={style.sidebar}>
             </div>
         </div>
     </div>)

@@ -20,7 +20,7 @@ export default function Login() {
         <div>
             <h2>Welcome to Farmers' Harvest. Please log in below</h2>
         </div>
-        <div style={Style.form}>
+        <div style={style.form}>
             <input name="UserName" placeholder='Username' />
             <input name="password" placeholder="password" />
             <button type="submit">Submit</button>
@@ -29,7 +29,7 @@ export default function Login() {
             <div>
                 <h2> Or sign up below!</h2>
             </div>
-            <div style={Style.signup}>
+            <div style={style.signup}>
                 <input name='name' placeholder='Name'/>
                 <input name='email' placeholder='Email'/>
                 <input name='username' placeholder='Set your Username'/>

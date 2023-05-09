@@ -4,13 +4,10 @@ import { Farmer } from 'farmer';
 
 const Style = {
     card: {
-        blah: blah
     },
     farmer: {
-        blah: blah
     },
     produce: {
-        blah: blah
     }
 };
 
