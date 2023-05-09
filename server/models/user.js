@@ -13,10 +13,14 @@ const farmerSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  email: {
+    type:String,
+    required: true
+  },
   produce: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Produce'
   }]
 });
 
-module.exports = mongoose.model('Farmer', farmerSchema);
+module.exports = mongoose.model('Farmer', farmerSchema)
