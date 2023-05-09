@@ -7,6 +7,12 @@ const style = {
     button: {
 
     },
+    Login: {
+
+    },
+    Logout:{
+
+    },
 };
 
 //function button = (if loggedin( show log out button)
@@ -20,8 +26,8 @@ export default function Header() {
                 <h1>Farmers' Harvest</h1><h4>Test subtitle</h4>
             </div>
             <div style={style.button} >
-                <button />
-                <button />
+            <button type="Login">Login</button>
+            <button type="logout">Logout</button>
             </div>
         </div>
     )

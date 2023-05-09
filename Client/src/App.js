@@ -40,8 +40,8 @@ function App() {
             path='*'
             element={<h1 style={Style.whoops}> Wrong page!</h1>}
           />
-          <Footer />
         </Routes>
+        <Footer />
       </>
     </Router>
   );
