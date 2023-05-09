@@ -2,9 +2,14 @@ import React from 'react';
 
 const style = {
     Header: {
-        blah: blah
     },
     button: {
+
+    },
+    Login: {
+
+    },
+    Logout:{
 
     },
 };
@@ -20,8 +25,8 @@ export default function Header() {
                 <h1>Farmers' Harvest</h1><h4>Test subtitle</h4>
             </div>
             <div style={style.button} >
-                <button />
-                <button />
+            <button type="Login">Login</button>
+            <button type="logout">Logout</button>
             </div>
         </div>
     )

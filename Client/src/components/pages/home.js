@@ -3,7 +3,7 @@ import Card from '../card';
 
 //card functionality needs to add new card per each farmer
 
-const Style = {
+const style = {
     title: {
 
     }
@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <div>
             <div>
-                <h2 style={Style.title}> Welcome to Farmers' Harvest</h2>
+                <h2 style={style.title}> Welcome to Farmers' Harvest</h2>
             </div>
             <ul>
                 <li> <Card /></li>

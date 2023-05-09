@@ -2,7 +2,6 @@ import React from 'react';
 
 const style= {
     Footer: {
-        blah: blah
     }
 }
 export default function Footer() {

@@ -1,16 +1,13 @@
-import React, { useState } from 'react';
-import { Farmer } from 'farmer';
+import React from 'react';
+//import { Farmer } from 'farmer';
 
 
 const Style = {
     card: {
-        blah: blah
     },
     farmer: {
-        blah: blah
     },
     produce: {
-        blah: blah
     }
 };
 
@@ -19,14 +16,14 @@ const Style = {
 // add produce to farmer hook
 
 //return based on information and placeholders above
-
-return (
+export default function card() {
+    return (
     <div style ={Style.card}>
         <div style={Style.farmer}>
-            <h4> <Farmer /> </h4>
+            <h4> Farmer  </h4>
         </div>
         <div style={Style.produce}>
-            <p><Farmer.listofproduce /></p>
+            <p>Farmer.listofproduce </p>
         </div>
     </div>
-)
+)};
