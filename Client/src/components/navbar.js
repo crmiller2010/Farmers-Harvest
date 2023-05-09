@@ -1,11 +1,25 @@
-import React, { useState } from 'react';
+import { Outlet, Link } from "react-router-dom";
 
-function NavTabs({ currentPage, handlePageChange }) {
-    return (
-        <div>
-            ???
-        </div>
-    );
-}
+const Navbar = () => {
+  return (
+    <>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/login">login</Link>
+          </li>
+          <li>
+            <Link to="/addproduce">Add Produce</Link>
+          </li>
+        </ul>
+      </nav>
 
-export default NavTabs;
+      <Outlet />
+    </>
+  )
+};
+
+export default Navbar;
