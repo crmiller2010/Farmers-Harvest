@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { useMutation } from '@apollo/client';
 
 
+
 import Auth from '../utils/auth';
 
 
@@ -43,7 +44,7 @@ const handleFormSubmit = async (event) => {
       });
     };
 
-//default expected params below
+function Login() {
 return (
     <div>
         <div>
@@ -73,3 +74,4 @@ return (
 
 // export default parameters 
 export default Login;
+
