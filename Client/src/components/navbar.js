@@ -1,25 +1,29 @@
-import { Outlet, Link } from "react-router-dom";
+import React from 'react';
 
-const Navbar = () => {
+function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/login">login</Link>
-          </li>
-          <li>
-            <Link to="/addproduce">Add Produce</Link>
-          </li>
-        </ul>
-      </nav>
+    <ul className="nav nav-pills justify-content-center">
+      <li className="nav-item">
+        <a
+          href="/"
+          onClick={() => handlePageChange('Home')}
+          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+        >
+          Home
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="/addproduce"
+          onClick={() => handlePageChange('AddProduce')}
 
-      <Outlet />
-    </>
-  )
-};
+          className={currentPage === 'AddProduce' ? 'nav-link active' : 'nav-link'}
+        >
+          Add Produce
+        </a>
+      </li>
+    </ul>
+  );
+}
 
-export default Navbar;
+export default NavTabs;
