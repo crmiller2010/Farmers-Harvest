@@ -18,6 +18,7 @@ function Home() {
                 <h2 style={style.title}> This is a test of the fun system I have built,</h2>
             </div>
             <ul>
+                {/* cards display farmers and produce for front page */}
                 <li><Card /></li>
                 <li>This should be where produce and the farmers are shown</li>
             </ul>
