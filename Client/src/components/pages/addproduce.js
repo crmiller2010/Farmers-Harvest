@@ -22,6 +22,7 @@ const style = {
         <div>
             <h2 style={style.title}>Add your current produce</h2>
             <form>
+                {/* multiple select for produce items */}
                 <select
                 multiple={true}
                 value={selectedPro}
@@ -32,7 +33,9 @@ const style = {
                 }} >
                 <option {...AddProduce.name} />
                 </select>
-            </form><div>
+            </form>
+            <div>
+                {/* Shows what is selected from list */}
             <p>Your produce: {selectedPro.join(', ')}</p></div>
             <div style={style.sidebar}>
             </div>
