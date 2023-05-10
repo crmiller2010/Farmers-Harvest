@@ -1,5 +1,7 @@
 import React from 'react';
 
+//navigation bar. currentPage and HandlePage Change need additional help with
+
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-pills justify-content-center">
