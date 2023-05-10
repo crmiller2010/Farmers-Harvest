@@ -1,5 +1,5 @@
 import React from 'react';
-import JWT from 'jwt-decode'
+//import JWT from 'jwt-decode'
 
 const style = {
     form: {
@@ -15,7 +15,7 @@ const style = {
 
 //default expected params below
 
-export default function Login() {
+function Login() {
     <div>
         <div>
             <h2>Welcome to Farmers' Harvest. Please log in below</h2>
@@ -40,3 +40,4 @@ export default function Login() {
         </div>
     </div>
 }
+export default Login;

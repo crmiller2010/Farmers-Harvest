@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const style = {
     Header: {
@@ -22,10 +23,10 @@ export default function Header() {
     return (
         <div className="first div">
             <div style={style.Header}>
-                <h1>Farmers' Harvest</h1><h4>Test subtitle</h4>
+                <h1>Farmers' Harvest</h1><h4>Fresh Produce Today!</h4>
             </div>
             <div style={style.button} >
-            <button type="Login">Login</button>
+            <button type="Login" ><Link to="/login"> Login </Link></button>
             <button type="logout">Logout</button>
             </div>
         </div>

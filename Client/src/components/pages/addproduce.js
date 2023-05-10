@@ -13,7 +13,7 @@ const style = {
 
 //add functionality to add list of current produce to left side
 
-export default function AddProduce () {
+ function AddProduce () {
 
   const [selectedPro, setSelectedPro] = useState(['']);
   
@@ -39,3 +39,5 @@ export default function AddProduce () {
         </div>
     </div>)
 }
+
+export default AddProduce;
