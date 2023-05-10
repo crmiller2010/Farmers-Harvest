@@ -1,21 +1,51 @@
-import React from 'react';
-//import JWT from 'jwt-decode'
+import React { useState } from 'react';
+import ReactDOM from "react-dom/client";
+import { useMutation } from '@apollo/client';
 
-const style = {
-    form: {
 
-    },
-    signup: {
 
-    },
+import Auth from '../utils/auth';
+
+
+
+
+// Establishing variable login and passing through credentials 
+const Login = (credentials) => {
+    const [formState, setFormState] = useState({ email: '', password: '' });
+    const [login, { error, data }] = useMutation(LOGIN_USER);
+
+    // State changes based on user's input 
+    const handleChange = (event) => {
+        const { user, value } = event.target;
     
-}
+        setFormState({
+          ...formState,
+          [user]: value
+        })
+      };
 
-//useState?
+// Submitting the form
+const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    console.log(formState);
+    try {
+      const { data } = await login({
+        variables: { ...formState },
+      });
 
-//default expected params below
+      Auth.login(data.login.token);
+    } catch (e) {
+      console.error(e);
+    }
+
+    setFormState({
+        email: '',
+        password: ''
+      });
+    };
 
 function Login() {
+return (
     <div>
         <div>
             <h2>Welcome to Farmers' Harvest. Please log in below</h2>
@@ -39,5 +69,9 @@ function Login() {
             </div>
         </div>
     </div>
-}
+);
+};
+
+// export default parameters 
 export default Login;
+
