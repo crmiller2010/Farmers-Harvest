@@ -19,4 +19,4 @@ const produceSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('Produce', produceSchema);
+module.exports = mongoose.model('Produce', produceSchema)
