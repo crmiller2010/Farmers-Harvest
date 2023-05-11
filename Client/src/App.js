@@ -11,7 +11,7 @@ import { setContext } from '@apollo/client/link/context';
 import Header from './components/header';
 import Footer from './components/footer';
 import Home from './components/pages/home';
-import Login from './components/pages/login';
+import LoginPage from './components/pages/login';
 import AddProduce from './components/pages/addproduce';
 import Navbar from './components/navbar';
 //style for 404 page
@@ -59,7 +59,7 @@ function App() {
         <div className="container">
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/login' element={<Login />} />
+            <Route path='/login' element={<LoginPage />} />
             <Route path='/addproduce' element={< AddProduce />} />
             <Route path='*' render={() => <h1 style={Style.whoops}>404 Error!</h1>} />
           </Routes>
