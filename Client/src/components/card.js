@@ -16,15 +16,15 @@ const Style = {
 // add produce to farmer hook
 
 //return based on information and placeholders above
-export default function card() {
+export default function card({ produce }) {
     return (
     <div style ={Style.card}>
         {/* card to show farmer and their produce object names are intended objects from backend */}
         <div style={Style.farmer}>
-            <h4> Farmer  </h4>
+            <h4> {produce.farmer.name}, {produce.farmer.email}  </h4>
         </div>
         <div style={Style.produce}>
-            <p>Farmer.listofproduce </p>
+            <p>{produce.name}, { produce.price}</p>
         </div>
     </div>
 )};

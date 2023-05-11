@@ -1,8 +1,21 @@
 import React from 'react';
 import Card from '../card';
+import {gql,useQuery} from '@apollo/client'
 
 //card functionality needs to add new card per each farmer
-
+const GET_PRODUCE=gql`
+query {
+    produces{
+        id
+        name
+        price
+        farmer{
+          name
+          email
+        }
+      }
+}
+`
 const style = {
     title: {
 
@@ -12,6 +25,9 @@ const style = {
 // needs functionality to create cards based on seed farmers/added farmers.
 
 function Home() {
+    const{loading,error,data } = useQuery(GET_PRODUCE)
+    if(loading) return <p>Loading...</p>
+    if(error) return <p>Something Went Wrong</p>
     return (
         <div>
             <div>
@@ -19,8 +35,13 @@ function Home() {
             </div>
             <ul>
                 {/* cards display farmers and produce for front page */}
-                <li><Card /></li>
+               
                 <li>This should be where produce and the farmers are shown</li>
+                { !loading&& !error&& (
+                    <li> {data.produces.map(produce => (
+                        <Card key={produce.id} produce={produce} />
+                    ))} </li>
+                ) }
             </ul>
         </div>
     );
