@@ -1,12 +1,14 @@
 import React from 'react';
+import style from './Style/navbar.css';
 
 //navigation bar. currentPage and HandlePage Change need additional help with
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-pills justify-content-center">
-      <li className="nav-item">
-        <a
+    <div className='navtab'>
+    <ul className="nav">
+      <li className="item">
+        <a 
           href="/"
           onClick={() => handlePageChange('Home')}
           className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
@@ -14,7 +16,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Home
         </a>
       </li>
-      <li className="nav-item">
+      <li className="item">
         <a
           href="/addproduce"
           onClick={() => handlePageChange('AddProduce')}
@@ -25,6 +27,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
     </ul>
+    </div>
   );
 }
 

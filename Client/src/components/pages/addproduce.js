@@ -1,13 +1,5 @@
 import React, { useState } from 'react';
-
-const style = {
-    title: {
-
-    },
-    sidebar: {
-
-    },
-}
+import style from '../Style/addproduce.css';
 
 //add functionality to bring in current seed produce
 
@@ -19,11 +11,11 @@ const style = {
   
   return (
     <div>
-        <div>
-            <h2 style={style.title}>Add your current produce</h2>
+        <div className='producepage'>
+            <h2>Add your current produce</h2>
             <form>
                 {/* multiple select for produce items */}
-                <select
+                <select className='selection'
                 multiple={true}
                 value={selectedPro}
                 onChange={e =>{
@@ -34,11 +26,10 @@ const style = {
                 <option {...AddProduce.name} />
                 </select>
             </form>
-            <div>
+            <div className='valueS'>
                 {/* Shows what is selected from list */}
-            <p>Your produce: {selectedPro.join(', ')}</p></div>
-            <div style={style.sidebar}>
-            </div>
+            <h2>Your selected produce: {selectedPro.join(', ')}</h2></div>
+            
         </div>
     </div>)
 }

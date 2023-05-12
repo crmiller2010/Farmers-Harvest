@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../card';
 import {gql,useQuery} from '@apollo/client'
+import style from "../Style/Style.css";
 
 //card functionality needs to add new card per each farmer
 const GET_PRODUCE=gql`
@@ -16,11 +17,6 @@ query {
       }
 }
 `
-const style = {
-    title: {
-
-    }
-}
 
 // needs functionality to create cards based on seed farmers/added farmers.
 
@@ -30,13 +26,11 @@ function Home() {
     if(error) return <p>Something Went Wrong</p>
     return (
         <div>
-            <div>
-                <h2 style={style.title}> This is a test of the fun system I have built,</h2>
-            </div>
+            <h3 className='h3'> This is the current offerings from Farmers' Harvest</h3>
             <ul>
                 {/* cards display farmers and produce for front page */}
                
-                <li>This should be where produce and the farmers are shown</li>
+                
                 { !loading&& !error&& (
                     <li> {data.produces.map(produce => (
                         <Card key={produce.id} produce={produce} />
