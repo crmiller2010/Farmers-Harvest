@@ -66,7 +66,7 @@ const RootQuery = new GraphQLObjectType({
         type: FarmerSCHEMA,
         args:{ id:{type: GraphQLID}},
         resolve (parent, args){
-          return Farmer.findByID(args.id);
+          return Farmer.findById(args.id);
         },
       },
     
@@ -82,7 +82,7 @@ const RootQuery = new GraphQLObjectType({
         type:ProduceSCHEMA,
         args:{ id:{type: GraphQLID}},
         resolve (parent, args){
-          return Produce.findById(args,id)
+          return Produce.findById(args.id)
         },
       },      
     },
