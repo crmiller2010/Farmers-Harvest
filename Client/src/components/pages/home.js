@@ -9,6 +9,7 @@ query {
         id
         name
         price
+        photo
         farmer{
           name
           email
