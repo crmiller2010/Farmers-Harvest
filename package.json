@@ -21,6 +21,7 @@
   "homepage": "https://github.com/crmiller2010/Farmers-Harvest#readme",
   "dependencies": {
     "apollo-server-express": "^3.12.0",
+    "concurrently": "^8.0.1",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "express-graphql": "^0.12.0",
