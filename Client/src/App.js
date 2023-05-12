@@ -13,15 +13,9 @@ import Footer from './components/footer';
 import Home from './components/pages/home';
 import LoginPage from './components/pages/login';
 import AddProduce from './components/pages/addproduce';
-import Navbar from './components/navbar';
+
+import style from "./components/Style/Style.css";
 //style for 404 page
-
-const Style = {
-  whoops: {
-  }
-}
-
-//apollo stuff?
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -55,18 +49,17 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-
+<div  className="fullPage">
         <Header />
-        <Navbar />
-        <div className="container">
+        <div>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/login' element={<LoginPage />} />
             <Route path='/addproduce' element={< AddProduce />} />
-            <Route path='*' render={() => <h1 style={Style.whoops}>404 Error!</h1>} />
+            <Route path='*' render={() => <h1>404 Error!</h1>} />
           </Routes>
-          <Footer />
-        </div>
+          </div>
+          <Footer /></div>
       </Router>
     </ApolloProvider>
   );

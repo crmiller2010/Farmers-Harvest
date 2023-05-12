@@ -1,15 +1,12 @@
 import React from 'react';
+import style from './Style/footer.css';
 
-const style= {
-    Footer: {
-    }
-}
 export default function Footer() {
     return (
-        <div style={style.Footer}>
+        <div className='Footer'>
             {/* footer shows who made app */}
-            <p> Farmers' Harvest was created by: </p>
-            <p> Chris Miller, Liana Moore, Samuel Wright, Alex Hickey,   May 2023</p>
+            <p className='FootText'> Farmers' Harvest was created by: </p>
+            <p className='FootText'> Chris Miller, Liana Moore, Samuel Wright, Alex Hickey,   May 2023</p>
         </div>
     )
 };

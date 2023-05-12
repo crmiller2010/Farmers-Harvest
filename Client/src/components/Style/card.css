@@ -1,0 +1,14 @@
+.CardS {
+    background-color: #888a7c;
+   border-radius: 100px 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+
+ul {
+     list-style-type: none;
+}

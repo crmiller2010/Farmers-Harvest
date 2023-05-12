@@ -1,0 +1,12 @@
+.item {
+    padding: 10px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px
+};
+
+.item:hover {
+    background-color: #888a7c; 
+};
