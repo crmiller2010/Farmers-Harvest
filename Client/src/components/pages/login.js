@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import ReactDOM from "react-dom/client";
-import { useMutation } from '@apollo/client';
+//import ReactDOM from "react-dom/client";
+//import { useMutation } from '@apollo/client';
+import style from "../Style/login.css";
 
 //import Auth from '../utils/auth';
 
@@ -40,24 +41,15 @@ import { useMutation } from '@apollo/client';
    // };
 //}
 
-const style = {
-    form: {
-
-    },
-    signup: {
-
-    }
-}
-
 function LoginPage() {
     return (
         <div>
-            <div>
+            <div className='pageLogin'>
                 <div>
                     <h2>Welcome to Farmers' Harvest. Please log in below</h2>
                 </div>
                 {/* login for users */}
-                <div style={style.form}>
+                <div className='signin'>
                     <input name="UserName" placeholder='Username' />
                     <input name="password" placeholder="password" />
                     <button type="submit">Submit</button>
@@ -67,7 +59,7 @@ function LoginPage() {
                         <h2> Or sign up below!</h2>
                     </div>
                     {/* sign up form */}
-                    <div style={style.signup}>
+                    <div className='signup'>
                         <input name='name' placeholder='Name' />
                         <input name='email' placeholder='Email' />
                         <input name='username' placeholder='Set your Username' />

@@ -1,16 +1,6 @@
 import React from 'react';
 //import { Farmer } from 'farmer';
-
-
-const Style = {
-    card: {
-    },
-    farmer: {
-    },
-    produce: {
-    }
-};
-
+import style from "./Style/card.css";
 //add farmer hook
 
 // add produce to farmer hook
@@ -18,13 +8,15 @@ const Style = {
 //return based on information and placeholders above
 export default function card({ produce }) {
     return (
-    <div style ={Style.card}>
-        {/* card to show farmer and their produce object names are intended objects from backend */}
-        <div style={Style.farmer}>
-            <h4> {produce.farmer.name}, {produce.farmer.email}  </h4>
+        <div className="CardS">
+            <ul>
+                {/* card to show farmer and their produce object names are intended objects from backend */}
+                <div>
+                    <h4> {produce.farmer.name}, {produce.farmer.email}  </h4>
+                </div>
+                <div>
+                    <p>{produce.name}, {produce.price}</p>
+                </div></ul>
         </div>
-        <div style={Style.produce}>
-            <p>{produce.name}, { produce.price}</p>
-        </div>
-    </div>
-)};
+    )
+};

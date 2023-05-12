@@ -1,19 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-
-const style = {
-    Header: {
-    },
-    button: {
-
-    },
-    Login: {
-
-    },
-    Logout:{
-
-    },
-};
+import NavBar from './navbar';
+import style from './Style/header.css';
 
 //function button = (if loggedin( show log out button)
 //else (show login button));
@@ -21,15 +9,18 @@ const style = {
 
 export default function Header() {
     return (
-        <div className="first div">
-            <div style={style.Header}>
+        <div className='Header'>
+            <div>
                 {/* App name and slogan */}
                 <h1>Farmers' Harvest</h1><h4>Fresh Produce Today!</h4>
             </div>
-            <div style={style.button} >
+            <div className='navtabbar'>
+            <NavBar />
+            </div>
+            <div className='ButtonS' >
                 {/* login button, logout button should disappear when not logged in and vice versa */}
-            <button type="Login" ><Link to="/login"> Login </Link></button>
-            <button type="logout">Logout</button>
+                <button className='Login' type="Login" ><Link to="/login"> Login </Link></button>
+                <button className='Logout' type="logout">Logout</button>
             </div>
         </div>
     )

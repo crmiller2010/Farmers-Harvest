@@ -1,0 +1,35 @@
+.Header {
+    color: white;
+    background-color: #70933b;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 0px 100px 10px;
+};
+
+.ButtonS {
+    text-decoration: none;
+};
+
+.Login {
+    text-decoration: none;
+    opacity: 50%;
+    box-shadow: 2px;
+    font-weight: bold;
+};
+
+.Login:hover {
+    opacity: 100%;
+    font-weight: bolder;
+};
+
+.Logout {
+    opacity: 50%;
+    box-shadow: 2px;
+    font-weight: bold;
+};
+
+.Logout:hover {
+    opacity: 100%;
+    font-weight: bolder;
+};

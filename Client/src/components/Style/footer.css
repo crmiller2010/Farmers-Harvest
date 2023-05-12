@@ -1,0 +1,13 @@
+
+.Footer {
+    opacity: 80%;
+    color:white;
+    background-color: #70933b;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.FootText {
+    opacity: 100%;
+}
