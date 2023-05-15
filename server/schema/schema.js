@@ -99,11 +99,11 @@ const RootQuery = new GraphQLObjectType({
       addfarmer:{
         type: FarmerSCHEMA,
         args: {
-          name: {type: GraphQLNonNull(GraphQLString)},
-          username:{type: GraphQLNonNull(GraphQLString)},
-          password:{type: GraphQLNonNull(GraphQLString)},
-          email:{type: GraphQLNonNull(GraphQLString)},
-          produce:{type: GraphQLList(GraphQLID)},
+          name: {type: new GraphQLNonNull(GraphQLString)},
+          username:{type: new GraphQLNonNull(GraphQLString)},
+          password:{type: new GraphQLNonNull(GraphQLString)},
+          email:{type: new GraphQLNonNull(GraphQLString)},
+          produce:{type: new GraphQLList(GraphQLID)},
         },
         resolve(parent,args) { 
           const farmer = new Farmer({

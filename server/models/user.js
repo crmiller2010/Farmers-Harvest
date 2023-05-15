@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+const { Schema, model} = require('mongoose');
 
-const farmerSchema = new mongoose.Schema({
+const farmerSchema = new Schema({
   name: {
     type: String,
     required: true
@@ -18,9 +18,11 @@ const farmerSchema = new mongoose.Schema({
     required: true
   },
   produce: [{
-    type: mongoose.Schema.Types.ObjectId,
+    type: Schema.Types.ObjectId,
     ref: 'Produce'
   }]
 });
 
-module.exports = mongoose.model('Farmer', farmerSchema)
+const Farmer = model('Farmer', farmerSchema);
+
+module.exports = Farmer;

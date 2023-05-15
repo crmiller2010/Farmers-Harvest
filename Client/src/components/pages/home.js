@@ -34,7 +34,7 @@ function Home() {
                 
                 { !loading&& !error&& (
                     <li> {data.produces.map(produce => (
-                        <Card key={produce.id} produce={produce} />
+                        <Card key={produce._id} produce={produce.name} />
                     ))} </li>
                 ) }
             </ul>
