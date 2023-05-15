@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "seed": "node server/seeders/seed.js",
     "install": "cd server && npm i && cd ../client && npm i",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",

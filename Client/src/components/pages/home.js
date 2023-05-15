@@ -1,13 +1,12 @@
 import React from 'react';
 import Card from '../card';
-import { gql, useQuery } from '@apollo/client';
+import { useQuery } from '@apollo/client';
+import { GET_FARMER } from '../../utils/queries';
 import style from "../Style/Style.css";
-import { QUERY_FARMER } from '../../utils/queries';
-
-
 
 function Home() {
-    const { loading, error, data } = useQuery(QUERY_FARMER)
+    const { loading, error, data } = useQuery(GET_FARMER);
+    const farmers = data?.farmer || [];
     if (loading) return <p>Loading...</p>
     if (error) return <p>Something Went Wrong</p>
     return (
@@ -16,10 +15,9 @@ function Home() {
             <ul>
                 {/* cards display farmers and produce for front page */}
 
-
-                {!loading && !error && (
-                    <li> {data.produces.map(produce => (
-                        <Card key={produce._id} produce={produce.name} />
+                {!loading && !error && ( 
+                    <li> {farmers.map(farmer => (
+                        <Card key={farmers.id} farmer={farmers} />
                     ))} </li>
                 )}
             </ul>

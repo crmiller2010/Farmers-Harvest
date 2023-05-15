@@ -134,14 +134,12 @@ const RootQuery = new GraphQLObjectType({
             name:{type: GraphQLNonNull(GraphQLString)},
              price:{type: GraphQLNonNull(GraphQLString)},
             photo:{type: (GraphQLString)},
-            farmer:{type: GraphQLNonNull(GraphQLID)},
           },
           resolve(parent,args){
             const produce = new Produce({
               name: args.name,
               price: args.price,
               photo: args.photo,
-              farmer: args.farmer
             });
             return produce.save();
          },
