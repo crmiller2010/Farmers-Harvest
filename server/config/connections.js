@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 
-const connectDB = async () =>{
-const conn = await mongoose.connect('mongodb://localhost:27017/mygroceryDB', {
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost:27017/mygroceryDB', 
+{
   useNewUrlParser: true,
   useUnifiedTopology: true
 
 });
   console.log('MongoDB Connected');
-};
 
-module.exports = connectDB;
+module.exports = mongoose.connection;
