@@ -10,7 +10,8 @@ const produceSchema = new mongoose.Schema({
     required: true
   },
   photo: {
-    type: String  
+         data: Buffer,
+        contentType: String    
   },
   farmer: {
     type: mongoose.Schema.Types.ObjectId,
