@@ -1,0 +1,16 @@
+[
+    {
+        "name": "john",
+        "username": "farmerJohn",
+        "email": "farmerJohn@uemail.com",
+        "produce": [
+            {"name": "carrots",
+            "price": 2
+        },
+        {
+            "name": "Strawberry",
+            "price": 2
+        }
+    ]
+    }
+]

@@ -9,15 +9,16 @@ export const QUERY_PRODUCE = gql`
   }
 `;
 
-export const QUERY_FARMER = gql`
-    query produces {
+
+export const GET_FARMER = gql`
+query farmers {
+    farmer {
+        id
+        name
+        email
         produce {
             name
             price
-            farmer
-                name
-                email
-            
         }
     }
-    `;
+}`;
