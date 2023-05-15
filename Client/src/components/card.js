@@ -1,9 +1,5 @@
 import React from 'react';
-//import { Farmer } from 'farmer';
 import style from "./Style/card.css";
-//add farmer hook
-
-// add produce to farmer hook
 
 //return based on information and placeholders above
 export default function card({ produce }) {

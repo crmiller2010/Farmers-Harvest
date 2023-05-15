@@ -8,3 +8,16 @@ export const QUERY_PRODUCE = gql`
     }
   }
 `;
+
+export const QUERY_FARMER = gql`
+    query produces {
+        produce {
+            name
+            price
+            farmer
+                name
+                email
+            
+        }
+    }
+    `;
