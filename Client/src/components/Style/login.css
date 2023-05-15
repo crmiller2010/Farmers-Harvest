@@ -1,8 +1,16 @@
 .pageLogin {
-    display: block;
     text-align: center;
     background-color: #888a7c;
     border-radius: 10px;
     width: 50%;
     margin: auto;
 }
+
+input {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 50%;
+    margin: auto;
+}
+
