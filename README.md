@@ -18,3 +18,9 @@ Farmers Harvest is a website where farmers are able to share the produce product
 <a href="https://docs.google.com/presentation/d/10iNE8j-i0kPKr4kkjf3TDwad3Jh9E_qTcVrOgRAmBfI/edit?usp=sharing">Presentation Link</a>
 <br>
 <a href="https://farmers-harvest.herokuapp.com/">Deployed App</a>
+<br>
+![farmers harvest 1](https://github.com/crmiller2010/Farmers-Harvest/assets/117928966/5f43be6b-1019-48e7-abfc-d14b9d2689cc)
+<br>
+![farmers harvest 2](https://github.com/crmiller2010/Farmers-Harvest/assets/117928966/223b4f66-8ad7-4355-9a6e-e837c5815884)
+<br>
+![farmers harvest 3](https://github.com/crmiller2010/Farmers-Harvest/assets/117928966/372b4a14-2f90-4c16-a40f-e92f25879a98)
